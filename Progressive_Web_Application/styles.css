@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: #f1f3f6;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2874f0;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+nav .brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav input[type="text"] {
+  width: 40%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+nav .cart {
+  font-size: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+#cart-count {
+  position: absolute;
+  top: -10px;
+  right: 18px;
+  background: #ff6161;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.9rem;
+}
+
+header {
+  background: #fff;
+  color: #2874f0;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(40,116,240,0.08);
+}
+
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(40,116,240,0.07);
+  padding: 1.2rem;
+  text-align: left;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+  box-shadow: 0 6px 24px rgba(40,116,240,0.13);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.product-card h3 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.product-card .price {
+  color: #388e3c;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.product-card .rating {
+  color: #ffb300;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .offer {
+  color: #d32f2f;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card button {
+  background: #2874f0;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  transition: background 0.2s;
+}
+
+.product-card button:hover {
+  background: #ff6161;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #2874f0;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
+  #product-list {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  header {
+    padding: 1rem 0;
+  }
+}

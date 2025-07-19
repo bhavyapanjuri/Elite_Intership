@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Shoes",
+    "price": "₹999",
+    "img": "images/shoes.jpg"
+  },
+  {
+    "name": "Watch",
+    "price": "₹1999",
+    "img": "images/watch.jpg"
+  }
+]
